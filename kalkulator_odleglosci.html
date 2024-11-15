@@ -6,14 +6,13 @@
     <title>Obliczanie odległości między punktami</title>
 </head>
 <body>
-    <h1>Oblicz odległość między punktami</h1>
-    <p>Otwórz konsolę przeglądarki, aby zobaczyć działanie skryptu.</p>
+    <h1>Oblicz odległość między punktami.</h1>
 
     <script>
         function obliczOdleglosc() {
             const x1 = parseFloat(prompt("Podaj współrzędną x1:"));
-            const y1 = parseFloat(prompt("Podaj współrzędną y1:"));
             const x2 = parseFloat(prompt("Podaj współrzędną x2:"));
+            const y1 = parseFloat(prompt("Podaj współrzędną y1:"));
             const y2 = parseFloat(prompt("Podaj współrzędną y2:"));
             const odleglosc = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
             const zaokraglonaOdleglosc = Math.round(odleglosc);
